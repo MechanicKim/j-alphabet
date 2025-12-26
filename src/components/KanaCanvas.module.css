@@ -40,4 +40,7 @@
   z-index: 1;
   touch-action: none;
   cursor: crosshair;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
 }

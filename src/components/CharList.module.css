@@ -1,0 +1,26 @@
+.grid {
+  flex: 1;
+  overflow-y: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+}
+
+.grid-button {
+  padding: 15px 0;
+  font-size: 1.2rem;
+  border: 2px solid;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.grid-empty {
+  padding: 15px 0;
+  font-size: 1.2rem;
+  border: 2px solid #dfe6e9;
+  border-radius: 8px;
+}

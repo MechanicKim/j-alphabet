@@ -4,12 +4,15 @@ import { VitePWA } from "vite-plugin-pwa";
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: "/app/jp-letters/",
   plugins: [
     react(),
     VitePWA({
       registerType: "autoUpdate",
       includeAssets: ["favicon.ico", "apple-touch-icon.png", "mask-icon.svg"],
       manifest: {
+        scope: '/app/jp-letters/',
+        start_url: '/app/jp-letters/',
         name: "일본어 가나 쓰기 마스터",
         short_name: "가나 마스터",
         description: "히라가나와 가타카나를 직접 쓰며 배우는 앱",

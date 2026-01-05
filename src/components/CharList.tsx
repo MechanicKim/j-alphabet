@@ -17,16 +17,17 @@ export default function CharList({
       {charList.map((item, index) =>
         item ? (
           <button
-            key={item.code}
-            className={styles["grid-button"]}
-            onClick={() => onSelect(item.char)}
-            style={{
-              borderColor: selectedChar === item.char ? "#ff7675" : "#dfe6e9",
-              backgroundColor: selectedChar === item.char ? "#fff5f5" : "white",
-            }}
-          >
-            {item.char}
-          </button>
+              key={item.code}
+              className={styles["grid-button"]}
+              onClick={() => onSelect(item.char)}
+              style={{
+                borderColor: selectedChar === item.char ? "#ff7675" : "#dfe6e9",
+                backgroundColor: selectedChar === item.char ? "#fff5f5" : "white",
+              }}
+            >
+              {item.char}
+              <span>{item.romaji}</span>
+            </button>
         ) : (
           <div key={`empty-${index}`} className={styles["grid-empty"]} />
         )
